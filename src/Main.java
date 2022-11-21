@@ -1,5 +1,30 @@
+import java.util.Scanner;
+
 public class Main {
+    static Scanner sc=new Scanner(System.in);
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        double a,b;
+        double c=0;
+        String op;
+        System.out.println("Enter the first number");
+         a=sc.nextDouble();
+        System.out.println("Enter the second number");
+        b=sc.nextDouble();
+        System.out.println("Enter the operation");
+        System.out.println("Addition\n Substraction\n Division\n multiplication");
+        op=sc.next();
+        switch(op)
+        {
+            case "Addition": c=a+b;
+                break;
+
+            default:
+                System.out.println("Invalid input");
+        }
+        System.out.printf(a + " " + op + " " + b + " = " + c);
+
+
     }
+
 }
