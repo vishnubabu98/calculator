@@ -32,7 +32,11 @@ public class Main {
                     c = a * b;
                     break;
                 case "/":
-                    c = a / b;
+                    try {
+                        c = a / b;
+                    }catch(Exception e){
+                        System.out.println("exception occured"+e.toString());
+                    }
                     break;
 
 
