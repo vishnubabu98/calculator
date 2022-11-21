@@ -21,6 +21,9 @@ public class Main {
             case "-": c=a-b;
                 break;
 
+            case "*": c=a*b;
+                break;
+
 
             default:
                 System.out.println("Invalid input");
