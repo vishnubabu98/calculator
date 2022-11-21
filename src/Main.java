@@ -7,30 +7,36 @@ public class Main {
         double a,b;
         double c=0;
         String op;
-        System.out.println("Enter the first number");
-         a=sc.nextDouble();
-        System.out.println("Enter the second number");
-        b=sc.nextDouble();
-        System.out.println("Enter the operation");
-        System.out.println("+\n -\n /\n *");
-        op=sc.next();
-        switch(op)
-        {
-            case "+": c=a+b;
-                break;
-            case "-": c=a-b;
-                break;
+            System.out.println("Enter the first number");
+            a = sc.nextDouble();
+            System.out.println("Enter the second number");
+            b = sc.nextDouble();
+            System.out.println("Enter the operation");
+            System.out.println("+\n -\n /\n *");
+            op = sc.next();
+            switch (op) {
+                case "+":
+                    c = a + b;
+                    break;
+                case "-":
+                    c = a - b;
+                    break;
 
-            case "*": c=a*b;
-                break;
+                case "*":
+                    c = a * b;
+                    break;
+                case "/":
+                    c = a / b;
+                    break;
 
 
-            default:
-                System.out.println("Invalid input");
+                default:
+                    System.out.println("Invalid input");
+            }
+            System.out.printf(a + " " + op + " " + b + " = " + c);
+
         }
-        System.out.printf(a + " " + op + " " + b + " = " + c);
 
 
-    }
 
 }
