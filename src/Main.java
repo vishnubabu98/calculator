@@ -12,12 +12,15 @@ public class Main {
         System.out.println("Enter the second number");
         b=sc.nextDouble();
         System.out.println("Enter the operation");
-        System.out.println("Addition\n Substraction\n Division\n multiplication");
+        System.out.println("+\n -\n /\n *");
         op=sc.next();
         switch(op)
         {
-            case "Addition": c=a+b;
+            case "+": c=a+b;
                 break;
+            case "-": c=a-b;
+                break;
+
 
             default:
                 System.out.println("Invalid input");
